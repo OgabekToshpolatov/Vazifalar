@@ -10,7 +10,8 @@ public class AuthAttribute:ActionFilterAttribute
     
     public override void OnActionExecuting(ActionExecutingContext context)
     {
-        context.Result = new UnauthorizedResult();
+        //context.Result = new UnauthorizedResult();
+
          var claims = new List<Claim>()
         {
            new Claim(ClaimTypes.Name,"Ogabek"),
