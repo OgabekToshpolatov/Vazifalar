@@ -27,3 +27,11 @@ D:\vazifalar\jwt\obj\Debug\net6.0\refint\jwt.dll
 D:\vazifalar\jwt\obj\Debug\net6.0\jwt.pdb
 D:\vazifalar\jwt\obj\Debug\net6.0\jwt.genruntimeconfig.cache
 D:\vazifalar\jwt\obj\Debug\net6.0\ref\jwt.dll
+D:\vazifalar\jwt\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\vazifalar\jwt\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\vazifalar\jwt\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\vazifalar\jwt\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\vazifalar\jwt\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\vazifalar\jwt\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\vazifalar\jwt\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\vazifalar\jwt\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
