@@ -26,3 +26,4 @@ D:\vazifalar\claim\obj\Debug\net6.0\claim.pdb
 D:\vazifalar\claim\obj\Debug\net6.0\claim.genruntimeconfig.cache
 D:\vazifalar\claim\obj\Debug\net6.0\ref\claim.dll
 D:\vazifalar\claim\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\vazifalar\claim\bin\Debug\net6.0\user.json
