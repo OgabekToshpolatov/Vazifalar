@@ -64,12 +64,4 @@ public class UserController:ControllerBase
         System.IO.File.WriteAllText(_filepath, jsonData);
     } 
 
-    [HttpGet("calculate")]
-    [TypeFilter(typeof(AuthFilterAttribute))]
-    public IActionResult Result(int n)
-    {
-        var a = Calculate.Calculate.Answer(n);
-
-        return Ok(a);
-    }
-}
+    
