@@ -1,4 +1,6 @@
+using jwt.Handler;
 using jwt.Models;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 
@@ -11,6 +13,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.Configure<JsonFileOptions>
                           (builder.Configuration.GetSection(nameof(JsonFileOptions)));
+
+// builder.Services.AddAuthentication("Oddiy")
+//     .AddScheme<AuthenticationSchemeOptions, AuthHandler>("Oddiy", null);                          
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(jwtoption =>

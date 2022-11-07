@@ -94,7 +94,7 @@ public class JwtController:ControllerBase
     }
 
     [Authorize]
-    [HttpGet]
+    [HttpGet("data")]
     public IActionResult GetData()
     {
         return Ok("Important information");
