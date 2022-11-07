@@ -36,7 +36,7 @@ public class JwtController:ControllerBase
         var user = users?.Where(x => x.Username == username).FirstOrDefault();
 
         if(user is null) return NotFound(new { Error = "User Topilmadi"});
-        
+
         if(user.Password != password) return BadRequest(); 
 
         var keyByte = System.Text.Encoding.UTF8.GetBytes("asda;odbuads;b242342hbiahbasdada");
@@ -91,6 +91,13 @@ public class JwtController:ControllerBase
          var jsonData = System.IO.File.ReadAllText(_filePath);
 
          return JsonConvert.DeserializeObject<List<User>>(jsonData);
+    }
+
+    [Authorize]
+    [HttpGet]
+    public IActionResult GetData()
+    {
+        return Ok("Important information");
     }
 
 }    
