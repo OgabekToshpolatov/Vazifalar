@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using claim.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
@@ -31,6 +32,20 @@ public class AuthFilterAttribute : ActionFilterAttribute
             return;
         }
 
+        var claims = new List<Claim>()
+        {
+            new Claim("Id", user?.Id!),
+            new Claim(ClaimTypes.Name, user?.Name!),
+            new Claim(ClaimTypes.Role, user?.Role!),
+            new Claim("Token", user?.Token!),
+        };
+
+        var identity = new ClaimsIdentity(claims);
+
+        var principal = new ClaimsPrincipal(identity);
+
+        context.HttpContext.User = principal;
+
     }
 
     private List<User>? ReadUser()
@@ -39,4 +54,6 @@ public class AuthFilterAttribute : ActionFilterAttribute
 
          return JsonConvert.DeserializeObject<List<User>>(jsonData);
     }
+
+    
 }
