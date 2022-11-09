@@ -1,3 +1,5 @@
+using middlewears.Middlewares;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -12,11 +14,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
 app.MapControllers();
+
+app.UseMiddleware<ExceptionHandlerMiddleweare>();
+app.UseMiddleware<LanguageMiddleweare>();
 
 app.Run();
