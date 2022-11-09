@@ -2,18 +2,18 @@ namespace middlewears.Middlewares;
 
 public class ExceptionHandlerMiddleweare
 {
-     private readonly RequestDelegate _next;
+    private readonly RequestDelegate _next;
 
     public ExceptionHandlerMiddleweare(RequestDelegate next)
     {
-        _next = next ;
+        _next = next ; 
     }
 
     public async Task Invoke(HttpContext httpContext)
     {
         try
         {
-            await _next(httpContext);
+            await _next(httpContext); // hederidagi exceptionlarni oladi.
         }
         catch (Exception e)
         {
