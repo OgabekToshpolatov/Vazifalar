@@ -1,0 +1,94 @@
+MyLogger: User malumotlari qoshilyabdi.
+MyLogger: User malumotlari qoshilyabdi.
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Application is shutting down...
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Application is shutting down...
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Application is shutting down...
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Application is shutting down...
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Application is shutting down...
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Application is shutting down...
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Application is shutting down...
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Application is shutting down...
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Application is shutting down...
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Application is shutting down...
+MyLogger: behzdosd user add 
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Application is shutting down...
+MyLogger: bel user add 
+MyLogger: User succesfully SignUp 
+MyLogger: User succesfully Login
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Application is shutting down...
+MyLogger: Now listening on: https://localhost:7249
+MyLogger: Now listening on: http://localhost:5166
+MyLogger: Application started. Press Ctrl+C to shut down.
+MyLogger: Hosting environment: Development
+MyLogger: Content root path: D:\vazifalar\Logger\
+MyLogger: Application is shutting down...

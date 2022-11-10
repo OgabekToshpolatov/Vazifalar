@@ -59,3 +59,16 @@ D:\vazifalar\Logger\obj\Debug\net6.0\refint\Logger.dll
 D:\vazifalar\Logger\obj\Debug\net6.0\Logger.pdb
 D:\vazifalar\Logger\obj\Debug\net6.0\Logger.genruntimeconfig.cache
 D:\vazifalar\Logger\obj\Debug\net6.0\ref\Logger.dll
+D:\vazifalar\Logger\bin\Debug\net6.0\Flurl.dll
+D:\vazifalar\Logger\bin\Debug\net6.0\Flurl.Http.dll
+D:\vazifalar\Logger\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\vazifalar\Logger\bin\Debug\net6.0\Serilog.dll
+D:\vazifalar\Logger\bin\Debug\net6.0\Serilog.AspNetCore.dll
+D:\vazifalar\Logger\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+D:\vazifalar\Logger\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+D:\vazifalar\Logger\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+D:\vazifalar\Logger\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+D:\vazifalar\Logger\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+D:\vazifalar\Logger\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+D:\vazifalar\Logger\bin\Debug\net6.0\Serilog.Sinks.File.dll
+D:\vazifalar\Logger\bin\Debug\net6.0\TelegramSink.dll
