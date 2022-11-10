@@ -21,7 +21,7 @@ public class ExceptionHandlerMiddleweare
             await httpContext.Response.WriteAsJsonAsync(new { error = e.Message });
 
             using var client = new HttpClient();
-            var result = await client.GetAsync($"https://api.telegram.org/bot5607955006:AAGHBStoV2pffc9lmuvlpQ_a7UgrU8JYcmM/sendmessage?chat_id=-827851635&text={e}");
+            var result = await client.GetAsync($"https://api.telegram.org/bot5253246383:AAEAV5JYLkaElN4jzQ1OJb2a27ABQHa2kq4/sendmessage?chat_id=5592363193&text={e}");
 
         }
     }

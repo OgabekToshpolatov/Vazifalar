@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using middlewears.Filters;
 
 namespace middlewears.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[LanguageFilter]
 public class UserController:ControllerBase
 {
     [HttpGet]
