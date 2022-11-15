@@ -61,7 +61,6 @@ public class ClassRoomController:Controller
     }
 
     [HttpPost, ActionName("Delete")]
-    [ValidateAntiForgeryToken]
     public IActionResult DeletePost(Guid id)
     {
         var obj = _context.Classrooms?.Find(id);
