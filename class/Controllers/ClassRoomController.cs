@@ -69,7 +69,7 @@ public class ClassRoomController:Controller
         
         _context.Classrooms?.Remove(obj);
         _context.SaveChanges();
-         TempData["success"] = "Category deleted successfully";
+         TempData["success"] = "Class deleted successfully";
         return RedirectToAction("Index");
     }
 
