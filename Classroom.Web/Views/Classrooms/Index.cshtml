@@ -1,0 +1,29 @@
+﻿@using Classroom.Web.Data
+@inject ApplicationDbContext DbContext
+
+<h1>Classrooms</h1>
+
+<table class="table table-striped table-bordered border-primary">
+    <thead>
+    <tr>
+         <th>No</th>
+         <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    @{
+        var classrooms = DbContext.Classrooms.ToList();
+        int k = 0;
+        foreach (var classroom in classrooms)
+        {
+            k++;
+            <tr>
+                 <td>@k</td>
+                 <td>@classroom.Name</td>
+                 <td>@classroom.Key</td>
+                <td><a asp-action="ClassroomById" asp-route-id="@classroom.Id" class="btn btn-primary">Edit</a></td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>
