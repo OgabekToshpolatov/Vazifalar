@@ -12,4 +12,5 @@ public class ApplicationDbContext : IdentityDbContext<User, UserRole, Guid>
     public DbSet<UserTaskComment>? UserTasksComment { get; set; }
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+
 }
