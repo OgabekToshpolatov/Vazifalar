@@ -12,6 +12,17 @@
         },
         "runtime": {
           "localizer.dll": {}
+        },
+        "resources": {
+          "En/localizer.resources.dll": {
+            "locale": "En"
+          },
+          "Ru/localizer.resources.dll": {
+            "locale": "Ru"
+          },
+          "Uz/localizer.resources.dll": {
+            "locale": "Uz"
+          }
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},

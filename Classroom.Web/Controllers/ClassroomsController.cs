@@ -99,4 +99,33 @@ public class ClassroomsController : Controller
 
         return RedirectToAction(nameof(ClassroomById), new { Id = classroom.Id });
     }
+
+    [HttpGet]
+    public IActionResult AddTask()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> AddTask(CreateTaskDto taskDto)
+    {
+        if(!ModelState.IsValid)
+        {
+            return View(taskDto);
+        }
+             
+        var task =new  Classroom.Web.Data.Task
+        {
+             Title = taskDto.Title,
+             Description = taskDto.Description
+        };
+        var classRoom = _context.Classrooms?.FirstOrDefault(c => c.Id == taskDto.ClassroomId);
+        if(classRoom is null) return NotFound("Berilgan classroom id bo`yicha classroom topilmadi.");
+        
+        classRoom.Tasks?.Add(task);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(ClassroomById));
+
+    }
 }

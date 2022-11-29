@@ -31,6 +31,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3Nyb29tc1xBZGRDbGFzc3Jvb20uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/vazifalar/Classroom.Web/Views/Classrooms/AddTask.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3Nyb29tc1xBZGRUYXNrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/vazifalar/Classroom.Web/Views/Classrooms/ClassroomById.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3Nyb29tc1xDbGFzc3Jvb21CeUlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
