@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Micros\\mvc\\mvc.csproj": {}
+    "D:\\vazifalar\\mvc\\mvc.csproj": {}
   },
   "projects": {
-    "D:\\Micros\\mvc\\mvc.csproj": {
+    "D:\\vazifalar\\mvc\\mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Micros\\mvc\\mvc.csproj",
+        "projectUniqueName": "D:\\vazifalar\\mvc\\mvc.csproj",
         "projectName": "mvc",
-        "projectPath": "D:\\Micros\\mvc\\mvc.csproj",
+        "projectPath": "D:\\vazifalar\\mvc\\mvc.csproj",
         "packagesPath": "C:\\Users\\ogabe\\.nuget\\packages\\",
-        "outputPath": "D:\\Micros\\mvc\\obj\\",
+        "outputPath": "D:\\vazifalar\\mvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ogabe\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,19 +38,27 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.AspNetCore.Mvc.RazorPages": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "microsoft.entityframeworkcore": {
               "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "microsoft.entityframeworkcore.design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.10, )"
             },
             "microsoft.entityframeworkcore.sqlite": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.10, )"
+            },
+            "microsoft.entityframeworkcore.tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
             }
           },
           "imports": [
