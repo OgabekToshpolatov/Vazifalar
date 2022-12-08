@@ -226,12 +226,12 @@ namespace mvc.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("ParnetId")
+                    b.Property<int?>("ParentId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ParnetId");
+                    b.HasIndex("ParentId");
 
                     b.ToTable("Categories");
                 });
@@ -356,7 +356,7 @@ namespace mvc.Migrations
                 {
                     b.HasOne("mvc.Entities.Category", "Parent")
                         .WithMany("Children")
-                        .HasForeignKey("ParnetId");
+                        .HasForeignKey("ParentId");
 
                     b.Navigation("Parent");
                 });

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace mvc.Migrations
 {
-    public partial class InitDb : Migration
+    public partial class Init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -58,14 +58,14 @@ namespace mvc.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: true),
-                    ParnetId = table.Column<int>(type: "INTEGER", nullable: true)
+                    ParentId = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Categories", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Categories_Categories_ParnetId",
-                        column: x => x.ParnetId,
+                        name: "FK_Categories_Categories_ParentId",
+                        column: x => x.ParentId,
                         principalTable: "Categories",
                         principalColumn: "Id");
                 });
@@ -279,9 +279,9 @@ namespace mvc.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Categories_ParnetId",
+                name: "IX_Categories_ParentId",
                 table: "Categories",
-                column: "ParnetId");
+                column: "ParentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Jobs_CategoryId",
