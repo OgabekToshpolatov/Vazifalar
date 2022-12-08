@@ -1,0 +1,32 @@
+@model RegisterUserDto
+
+<h1>SignUp Page</h1>
+
+<form method="post" enctype="multipart/form-data">
+  <input hidden="true" asp-for="@Model.ReturnUrl">
+  <div class="mb-3">
+    <label asp-for="@Model.UserName" class="form-label">Username</label>
+    <input type="text" asp-for="@Model.UserName" class="form-control" placeholder="UserName">
+  </div>
+  <div class="mb-3">
+    <label asp-for="@Model.FirstName" class="form-label">FirstName</label>
+    <input type="text" asp-for="@Model.FirstName" class="form-control" placeholder="FirstName">
+  </div>
+  <div class="mb-3">
+    <label asp-for="@Model.LastName" class="form-label">LastName</label>
+    <input type="text" asp-for="@Model.LastName" class="form-control" placeholder="LastName">
+  </div>
+  <div class="mb-3">
+    <label asp-for="@Model.Password" class="form-label">Password</label>
+    <input type="password" asp-for="@Model.Password" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label asp-for="@Model.ConfirmPassword" class="form-label">ConfirmPassword</label>
+    <input type="password" asp-for="@Model.ConfirmPassword" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label asp-for="@Model.Email" class="form-label">Email</label>
+    <input type="email" asp-for="@Model.Email" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary">SignUp</button>
+</form>

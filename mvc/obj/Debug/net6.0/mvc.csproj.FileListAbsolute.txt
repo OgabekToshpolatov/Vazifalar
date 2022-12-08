@@ -404,3 +404,12 @@ D:\vazifalar\mvc\obj\Debug\net6.0\refint\mvc.dll
 D:\vazifalar\mvc\obj\Debug\net6.0\mvc.pdb
 D:\vazifalar\mvc\obj\Debug\net6.0\mvc.genruntimeconfig.cache
 D:\vazifalar\mvc\obj\Debug\net6.0\ref\mvc.dll
+D:\vazifalar\mvc\bin\Debug\net6.0\Castle.Core.dll
+D:\vazifalar\mvc\bin\Debug\net6.0\Mapster.dll
+D:\vazifalar\mvc\bin\Debug\net6.0\Mapster.Core.dll
+D:\vazifalar\mvc\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\vazifalar\mvc\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\vazifalar\mvc\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\vazifalar\mvc\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\vazifalar\mvc\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\vazifalar\mvc\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
