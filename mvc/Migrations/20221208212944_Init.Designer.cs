@@ -11,7 +11,7 @@ using mvc.Data;
 namespace mvc.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221208082538_Init")]
+    [Migration("20221208212944_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -274,7 +274,16 @@ namespace mvc.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Address")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Name")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PhoneNumber")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Status")
