@@ -7,5 +7,7 @@ namespace BlogMvc.Data;
 public class AppDbContext : IdentityDbContext<AppUser>
 {
     public DbSet<Post> Posts { get; set; }
+    public DbSet<Category> Categorys { get; set; }
+    public DbSet<Job> Jobs { get; set; }
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options){}
 }

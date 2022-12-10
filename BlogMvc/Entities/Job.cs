@@ -8,10 +8,10 @@ public class Job
     public string Name { get; set; }
     public string Description { get; set; }
     public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
-    public ulong CategoryId { get; set; }
+    public long CategoryId { get; set; }
     [ForeignKey(nameof(CategoryId))]
     public Category Category { get; set; }
-    public ulong PostId { get; set; }
+    public long PostId { get; set; }
     [ForeignKey(nameof(PostId))]
     public Post Post { get; set; }
     

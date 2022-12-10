@@ -6,7 +6,7 @@ namespace BlogMvc.Entities;
 public class Category
 {
     [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public ulong Id { get; set; }
+    public long Id { get; set; }
     public string Name { get; set; }
     public ICollection<Job> Jobs { get; set; }
 }
