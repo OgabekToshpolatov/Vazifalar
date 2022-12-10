@@ -1,0 +1,10 @@
+@model GetOrganizationByIdDto
+
+<h1>Create post</h1>
+
+<form method="post" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label asp-for="@Model.Id" class="form-label">Id</label>
+    <input type="text" asp-for="@Model.Id" class="form-control" placeholder="Id">
+  <button type="submit" class="btn btn-primary">Get</button>
+</form>

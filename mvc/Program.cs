@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using mvc.Data;
 using mvc.Entities;
+using mvc.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,8 @@ builder.Services.AddIdentity<AppUser, AppUserRole>(options =>
         options.Password.RequireUppercase = false;
 })
 .AddEntityFrameworkStores<AppDbContext>();
+
+builder.Services.AddScoped<IOrganizationService, OrganizationService>();
 
 var app = builder.Build();
 
