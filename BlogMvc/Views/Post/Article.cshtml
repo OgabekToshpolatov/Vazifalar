@@ -1,0 +1,14 @@
+@model PostViewModel
+
+<div class="">
+    <img src="@Model.Image" alt="image">
+    <p>@Model.Name</p>
+    <p>@Model.Address</p>
+    <p>@Model.PhoneNumber</p>
+    <p>@Model.Description</p>
+    @if(@Model.IsEdited)
+    {
+        <span>@Model.UpdatedDate</span>
+    }
+    <span>@Model.CreatedDate</span>
+</div>
