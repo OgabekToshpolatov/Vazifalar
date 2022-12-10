@@ -8,65 +8,65 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = mvc
 build_property.RootNamespace = mvc
-build_property.ProjectDir = D:\vazifalar\mvc\
+build_property.ProjectDir = d:\vazifalar\mvc\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\vazifalar\mvc
+build_property.MSBuildProjectDirectory = d:\vazifalar\mvc
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/vazifalar/mvc/Views/Account/SignIn.cshtml]
+[d:/vazifalar/mvc/Views/Account/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/vazifalar/mvc/Views/Account/SignUp.cshtml]
+[d:/vazifalar/mvc/Views/Account/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/vazifalar/mvc/Views/Home/Index.cshtml]
+[d:/vazifalar/mvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/vazifalar/mvc/Views/Home/Privacy.cshtml]
+[d:/vazifalar/mvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/vazifalar/mvc/Views/Organization/Article.cshtml]
+[d:/vazifalar/mvc/Views/Organization/Article.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JnYW5pemF0aW9uXEFydGljbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/vazifalar/mvc/Views/Organization/Create.cshtml]
+[d:/vazifalar/mvc/Views/Organization/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JnYW5pemF0aW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/vazifalar/mvc/Views/Organization/GetOrganization.cshtml]
+[d:/vazifalar/mvc/Views/Organization/GetOrganization.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JnYW5pemF0aW9uXEdldE9yZ2FuaXphdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/vazifalar/mvc/Views/Organization/Index.cshtml]
+[d:/vazifalar/mvc/Views/Organization/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JnYW5pemF0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/vazifalar/mvc/Views/Profile/Profile.cshtml]
+[d:/vazifalar/mvc/Views/Profile/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/vazifalar/mvc/Views/Shared/Error.cshtml]
+[d:/vazifalar/mvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/vazifalar/mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[d:/vazifalar/mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/vazifalar/mvc/Views/_ViewImports.cshtml]
+[d:/vazifalar/mvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/vazifalar/mvc/Views/_ViewStart.cshtml]
+[d:/vazifalar/mvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/vazifalar/mvc/Views/Shared/_Layout.cshtml]
+[d:/vazifalar/mvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x8p8g49oo3
