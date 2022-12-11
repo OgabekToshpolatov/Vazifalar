@@ -5,6 +5,6 @@ namespace BlogMvc.Repositories;
 public interface ICategoryRepository
 {
     Task<Category> CreateAsync(Category post);
-    Task<Category> GetPostAsync(long id);
+    Task<Category> GetCategoryAsync(long id);
     Task DeleteAsync(long id);
 }

@@ -1,5 +1,6 @@
 using BlogMvc.Data;
 using BlogMvc.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlogMvc.Repositories;
 
@@ -13,18 +14,22 @@ public class CategoryRepository : ICategoryRepository
         _logger = logger ;
         _context = context ;
     }
-    public  Task<Category> CreateAsync(Category post)
+    public  async Task<Category> CreateAsync(Category category)
     {
-        throw new NotImplementedException();
+        var entity = await _context.Categories.AddAsync(category);
+        await _context.SaveChangesAsync();
+        return entity.Entity;
     }
 
-    public Task DeleteAsync(long id)
+    public async Task DeleteAsync(long id)
     {
-        throw new NotImplementedException();
+        var entity = await _context.Categories.FindAsync(id);
+        if(entity is null) return;
+        _context.Categories.Remove(entity);
+        _context.SaveChanges();
     }
 
-    public Task<Category> GetPostAsync(long id)
-    {
-        throw new NotImplementedException();
-    }
+    public async Task<Category> GetCategoryAsync(long id) => 
+                                await _context.Categories.FirstOrDefaultAsync( p => p.Id == id);
+    
 }
