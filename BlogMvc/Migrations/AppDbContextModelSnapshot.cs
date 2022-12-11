@@ -95,7 +95,7 @@ namespace BlogMvc.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categorys");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("BlogMvc.Entities.Job", b =>

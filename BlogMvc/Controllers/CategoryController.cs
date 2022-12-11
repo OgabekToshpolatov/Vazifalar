@@ -16,14 +16,16 @@ public class CategoryController:Controller
     }  
 
     public IActionResult Create() => View();
-    
+
     [HttpPost]
     public async Task<IActionResult> Create(CreateOrUpdateViewModelCategory model)
     {
         if(!ModelState.IsValid) return View();
         var category = await _categoryService.CreateCategorytAsync(model);
-        return LocalRedirect("Index");
+        return LocalRedirect("/Category/Index");
     }
+
+    public IActionResult Index() => View();
 
 
 }

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogMvc.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221210205605_Added ")]
-    partial class Added
+    [Migration("20221211181430_InitDb")]
+    partial class InitDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -97,7 +97,7 @@ namespace BlogMvc.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categorys");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("BlogMvc.Entities.Job", b =>

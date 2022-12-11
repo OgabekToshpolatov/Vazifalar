@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BlogMvc.Migrations
 {
-    public partial class Added : Migration
+    public partial class InitDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -50,7 +50,7 @@ namespace BlogMvc.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Categorys",
+                name: "Categories",
                 columns: table => new
                 {
                     Id = table.Column<long>(type: "INTEGER", nullable: false)
@@ -59,7 +59,7 @@ namespace BlogMvc.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Categorys", x => x.Id);
+                    table.PrimaryKey("PK_Categories", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -210,9 +210,9 @@ namespace BlogMvc.Migrations
                 {
                     table.PrimaryKey("PK_Jobs", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Jobs_Categorys_CategoryId",
+                        name: "FK_Jobs_Categories_CategoryId",
                         column: x => x.CategoryId,
-                        principalTable: "Categorys",
+                        principalTable: "Categories",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -300,7 +300,7 @@ namespace BlogMvc.Migrations
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "Categorys");
+                name: "Categories");
 
             migrationBuilder.DropTable(
                 name: "Posts");
