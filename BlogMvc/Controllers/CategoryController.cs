@@ -15,6 +15,9 @@ public class CategoryController:Controller
         _categoryService = categoryService ;
     }  
 
+    public IActionResult Create() => View();
+    
+    [HttpPost]
     public async Task<IActionResult> Create(CreateOrUpdateViewModelCategory model)
     {
         if(!ModelState.IsValid) return View();

@@ -1,0 +1,11 @@
+@model BlogMvc.Models.Category.CreateOrUpdateViewModelCategory
+
+<h1>Create Category</h1>
+
+<form method="post" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label asp-for="@Model.Name" class="form-label">Name</label>
+    <input type="text" asp-for="@Model.Name" class="form-control" placeholder="Name">
+  </div>
+  <button type="submit" class="btn btn-primary">Create</button>
+</form>

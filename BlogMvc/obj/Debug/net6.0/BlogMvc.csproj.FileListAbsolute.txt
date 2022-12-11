@@ -59,3 +59,5 @@ D:\vazifalar\BlogMvc\obj\Debug\net6.0\refint\BlogMvc.dll
 D:\vazifalar\BlogMvc\obj\Debug\net6.0\BlogMvc.pdb
 D:\vazifalar\BlogMvc\obj\Debug\net6.0\BlogMvc.genruntimeconfig.cache
 D:\vazifalar\BlogMvc\obj\Debug\net6.0\ref\BlogMvc.dll
+D:\vazifalar\BlogMvc\bin\Debug\net6.0\Mapster.dll
+D:\vazifalar\BlogMvc\bin\Debug\net6.0\Mapster.Core.dll
