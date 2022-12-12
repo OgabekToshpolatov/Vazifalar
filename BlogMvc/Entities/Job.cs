@@ -7,6 +7,7 @@ public class Job
     public ulong Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
+    public string Image { get; set; }
     public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
     public long CategoryId { get; set; }
     [ForeignKey(nameof(CategoryId))]

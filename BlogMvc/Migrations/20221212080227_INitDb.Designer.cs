@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogMvc.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221211181430_InitDb")]
-    partial class InitDb
+    [Migration("20221212080227_INitDb")]
+    partial class INitDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -113,6 +113,9 @@ namespace BlogMvc.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Image")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")

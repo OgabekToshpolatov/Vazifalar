@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BlogMvc.Migrations
 {
-    public partial class InitDb : Migration
+    public partial class INitDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -202,6 +202,7 @@ namespace BlogMvc.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: true),
                     Description = table.Column<string>(type: "TEXT", nullable: true),
+                    Image = table.Column<string>(type: "TEXT", nullable: true),
                     CreatedDate = table.Column<DateTime>(type: "TEXT", nullable: false),
                     CategoryId = table.Column<long>(type: "INTEGER", nullable: false),
                     PostId = table.Column<long>(type: "INTEGER", nullable: false)
