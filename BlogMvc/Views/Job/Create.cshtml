@@ -1,0 +1,26 @@
+@model CreateOrUpdateJobViewModel
+
+<h1>Create Job</h1>
+
+<form method="post" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label asp-for="@Model.Name" class="form-label">Name</label>
+    <input type="text" asp-for="@Model.Name" class="form-control" placeholder="Name">
+  </div>
+    <label asp-for="@Model.Description" class="form-label">Description</label>
+    <textarea asp-for="@Model.Description" class="form-control"></textarea>
+  </div>
+  <div class="mb-3">
+    <label asp-for="@Model.CategoryId" class="form-label">CategoryId</label>
+    <input type="text" asp-for="@Model.CategoryId" class="form-control" placeholder="CategoryId">
+  </div>
+  <div class="mb-3">
+    <label asp-for="@Model.PostId" class="form-label">PostId</label>
+    <input type="text" asp-for="@Model.PostId" class="form-control" placeholder="PostId">
+  </div>
+  <div class="mb-3">
+    <label asp-for="@Model.Image" class="form-label">Image</label>
+    <input type="file" accept="image/*" asp-for="@Model.Image" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary">Create</button>
+</form>

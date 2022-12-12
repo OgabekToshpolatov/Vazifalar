@@ -15,20 +15,20 @@ public class JobService : IJobsService
         _jobRepository = jobRepository ;
         _logger = logger ;
     }
-    public async Task<JobViewModel> CreateCategorytAsync(CreateOrUpdateJobViewModel model)
+    public async Task<JobViewModel> CreateJobAsync(CreateOrUpdateJobViewModel model)
     {
-        var entity = await _jobRepository.CreateAsync(model.ToEntityJob());
+        var entity = await _jobRepository.CreateJobAsync(model.ToEntityJob());
         return entity.Adapt<JobViewModel>();
     }
 
-    public async  Task DeleteCategoryAsync(long id)
+    public async  Task DeleteJobAsync(long id)
     {
          await _jobRepository.DeleteAsync(id) ;
     }
 
-    public async  Task<JobViewModel> GetCategoryAsync(long id)
+    public async  Task<JobViewModel> GetJobByIdAsync(long id)
     {
-        var entity = await _jobRepository.GetCategoryAsync(id);
+        var entity = await _jobRepository.GetJobByIdAsync(id);
         return entity.Adapt<JobViewModel>();
     }
 }

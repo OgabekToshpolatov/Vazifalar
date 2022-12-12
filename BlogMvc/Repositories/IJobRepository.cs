@@ -4,7 +4,7 @@ namespace BlogMvc.Repositories;
 
 public interface IJobRepository
 {
-    Task<Job> CreateAsync(Job post);
-    Task<Job> GetCategoryAsync(long id);
+    Task<Job> CreateJobAsync(Job post);
+    Task<Job> GetJobByIdAsync(long id);
     Task DeleteAsync(long id);
 }

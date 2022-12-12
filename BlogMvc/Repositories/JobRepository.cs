@@ -11,7 +11,7 @@ public class JobRepository : IJobRepository
     {
         _context = context ;
     }
-    public async Task<Job> CreateAsync(Job post)
+    public async Task<Job> CreateJobAsync(Job post)
     {
         var entity = await _context.Jobs.AddAsync(post);
         await _context.SaveChangesAsync();
@@ -26,5 +26,5 @@ public class JobRepository : IJobRepository
 
     }
 
-    public async Task<Job> GetCategoryAsync(long id) => await _context.Jobs.FindAsync(id);
+    public async Task<Job> GetJobByIdAsync(long id) => await _context.Jobs.FindAsync(id);
 }
