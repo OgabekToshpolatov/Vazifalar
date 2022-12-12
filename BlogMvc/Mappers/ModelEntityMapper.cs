@@ -1,5 +1,6 @@
 using BlogMvc.Entities;
 using BlogMvc.Models;
+using BlogMvc.Models.Job;
 
 namespace BlogMvc.Mapper;
 
@@ -45,4 +46,13 @@ public static class ModelEntityMapper
         var str = Convert.ToBase64String(result);
         return "data:image/jpeg;base64,"+str;
     }
+    public static Job ToEntityJob(this CreateOrUpdateJobViewModel model)
+        => new()
+        {
+            Name = model.Name,
+            Description = model.Description,
+            CategoryId = model.CategoryId,
+            PostId = model.PostId,
+            Image = ToBase64String(model.Image)
+        };
 }
