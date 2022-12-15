@@ -15,6 +15,9 @@ public class JobController:Controller
         _jobService = jobService ;
     }
 
+    public IActionResult Create() => View();
+
+    [HttpPost]
     public async Task<IActionResult> Create(CreateOrUpdateJobViewModel model)
     {
         if(!ModelState.IsValid) return View();

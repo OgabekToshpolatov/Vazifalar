@@ -100,7 +100,7 @@ namespace BlogMvc.Migrations
 
             modelBuilder.Entity("BlogMvc.Entities.Job", b =>
                 {
-                    b.Property<ulong>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 

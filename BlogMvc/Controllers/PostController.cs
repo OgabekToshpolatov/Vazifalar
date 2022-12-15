@@ -41,4 +41,11 @@ public class PostController : Controller
         var post = await _service.GetPostAsync(id);
         return View(post);
     }
+    
+    public async Task<IActionResult> GetPosts()
+    {
+        var posts = await _service.GetPostsAsync();
+        return View();
+
+    }
 }

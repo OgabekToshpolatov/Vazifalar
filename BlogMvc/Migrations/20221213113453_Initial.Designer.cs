@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogMvc.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221212080227_INitDb")]
-    partial class INitDb
+    [Migration("20221213113453_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -102,7 +102,7 @@ namespace BlogMvc.Migrations
 
             modelBuilder.Entity("BlogMvc.Entities.Job", b =>
                 {
-                    b.Property<ulong>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
