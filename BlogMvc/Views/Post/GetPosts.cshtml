@@ -1,8 +1,8 @@
-@model PostMultipleViewModel
+@model List<PostViewModel>
 
-@for(var i =0;  i < Model.Posts.Count(); i++)
+@for(var i =0;  i < Model.Count(); i++)
 {
-    var post = Model.Posts[i];
+    var post = Model[i];
     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
         <div class="card">
             <img class="card-img-top" src=@post.Image alt="Card image cap">
