@@ -42,6 +42,7 @@ public class PostController : Controller
         return View(post);
     }
 
+    [AllowAnonymous]
     public async Task<IActionResult> GetPosts()
     {
         var posts = await _service.GetPostsAsync();

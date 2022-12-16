@@ -55,4 +55,18 @@ public static class ModelEntityMapper
             PostId = model.PostId,
             Image = ToBase64String(model.Image)
         };
+
+    public static JobViewModel ToModelJob(this Job entity)
+        => new()
+        {
+            Id = entity.Id,
+            Name = entity.Name,
+            Description = entity.Description,
+            Image = entity.Image,
+            CreatedDate = entity.CreatedDate,
+            CategoryId = entity.CategoryId,
+            PostId = entity.PostId
+        };
+
+        
 }

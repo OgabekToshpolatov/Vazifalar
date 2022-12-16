@@ -30,4 +30,11 @@ public class JobController:Controller
         var post = await _jobService.GetJobByIdAsync(id);
         return View(post);
     }
+
+    public async Task<IActionResult> GetJobs()
+    {
+        var jobs = await _jobService.GetPostsAsync();
+        var bandingJobs = jobs.Where(p => p.CategoryId == 3).ToList();
+        return View(jobs.ToList());
+    }
 }

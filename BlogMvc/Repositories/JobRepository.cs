@@ -1,5 +1,7 @@
+using System.Linq.Expressions;
 using BlogMvc.Data;
 using BlogMvc.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlogMvc.Repositories;
 
@@ -27,4 +29,9 @@ public class JobRepository : IJobRepository
     }
 
     public async Task<Job> GetJobByIdAsync(long id) => await _context.Jobs.FindAsync(id);
+
+    public async Task<IEnumerable<Job>> GetJobsAsync(Expression<Func<Job, bool>> exp)
+                            => await _context.Jobs.Where(exp).ToListAsync();
+
+   
 }

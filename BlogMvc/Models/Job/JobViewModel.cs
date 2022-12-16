@@ -2,7 +2,7 @@ namespace BlogMvc.Models.Job;
 
 public class JobViewModel
 {
-    public ulong Id { get; set; }
+    public long Id { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
     public string Image { get; set; }

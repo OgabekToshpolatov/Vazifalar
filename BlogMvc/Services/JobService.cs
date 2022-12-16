@@ -31,4 +31,10 @@ public class JobService : IJobsService
         var entity = await _jobRepository.GetJobByIdAsync(id);
         return entity.Adapt<JobViewModel>();
     }
+
+    public async Task<IEnumerable<JobViewModel>> GetPostsAsync()
+    {
+        var jobs  = await _jobRepository.GetJobsAsync(p => true);
+        return jobs.Select(p => p.ToModelJob());
+    }
 }

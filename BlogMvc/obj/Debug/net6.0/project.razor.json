@@ -16338,6 +16338,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\vazifalar\\BlogMvc\\Views\\Job\\GetJobs.cshtml",
+      "TargetPath": "Views\\Job\\GetJobs.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\vazifalar\\BlogMvc\\Views\\Job\\Create.cshtml",
       "TargetPath": "Views\\Job\\Create.cshtml",
       "FileKind": "mvc"
