@@ -37,4 +37,11 @@ public class JobController:Controller
         var bandingJobs = jobs.Where(p => p.CategoryId == 3).ToList();
         return View(jobs.ToList());
     }
+
+    public async Task<IActionResult> Branding()
+    {
+        var jobs = await _jobService.GetPostsAsync();
+        var brandingJobs = jobs.Where(p => p.CategoryId == 3).ToList();
+        return View(brandingJobs);
+    }
 }

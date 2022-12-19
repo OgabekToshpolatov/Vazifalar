@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kf+Hk+VYGU9oBCOUUG4fHvh0TakQhs4JCi4zJiRx5T8=",
+  "Hash": "LFe3VlAcFRi3kW+tzTtlfwoUWw7jxbhbcxqWK1/+SdI=",
   "Source": "BlogMvc",
   "BasePath": "_content/BlogMvc",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\vazifalar\\BlogMvc\\wwwroot\\images\\bg.jpg.jfif",
+      "SourceId": "BlogMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\vazifalar\\BlogMvc\\wwwroot\\",
+      "BasePath": "_content/BlogMvc",
+      "RelativePath": "images/bg.jpg.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bg.jpg.jfif"
+    },
+    {
+      "Identity": "D:\\vazifalar\\BlogMvc\\wwwroot\\images\\bgf.png",
+      "SourceId": "BlogMvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\vazifalar\\BlogMvc\\wwwroot\\",
+      "BasePath": "_content/BlogMvc",
+      "RelativePath": "images/bgf.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bgf.png"
     },
     {
       "Identity": "D:\\vazifalar\\BlogMvc\\wwwroot\\js\\site.js",

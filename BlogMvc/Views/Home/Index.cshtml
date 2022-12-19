@@ -1,8 +1,144 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@* @model List<JobViewModel> *@
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+<nav>
+    <header class="header" style="">
+        <header class="lf-header">
+            <h1 class="header-title" >
+Hello!!! <br/>
+We Are Creative
+Digital Agency
+        </h1>
+        <p class="header-text" >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia tenetur quod eveniet iusto repellendus dolorem iste accusantium vitae dolor facere?
+        </p>
+        <div>
+            <button class="header-button">
+send message
+            </button>
+        </div>
+        </header>
+        <header class="rg-header">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/76/5b57f0bb2511e58ae18543e6165465/journalism_thumb.png?auto=format%2Ccompress&dpr=2&w=175&h=175&fit=fill&bg=FFF" alt="">
+        </header>
+    </header>
+</nav>
+
+<section>
+    <section class="work-showcase">
+        <h1 class="work-show-title" >
+            work showcase
+        </h1>
+<ul class="work-show-jobs">
+    <li>
+        <a href="" class="active">all</a>
+    </li>
+ <li>
+        <a href="">branding</a>
+    </li>
+     <li>
+        <a href="">illustration</a>
+    </li>
+     <li>
+        <a href="">web</a>
+    </li>
+</ul>
+
+<div class="images">
+    <li class="nav-item" style="list-style-type: none;">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Job" asp-action="GetJobs">Work</a>
+                            </li>
+
+
+    <div class="card">
+    <img src="" class="work-showcase-fr-image" alt="">
+<p class="card-text">
+    Lorem ipsum dolor sit amet.
+</p>
+    </div>
+    <img src="" class="work-showcase-sc-image" alt="">
+    <img src="" class="work-showcase-sc-image" alt="">
+    <img src="" class="work-showcase-fr-image" alt="">
+    <img src="" class="work-showcase-sc-image" alt="">
 </div>
+    </section>
+</section>
+
+<style>
+    .header{
+        display: flex;
+        @* justify-content: space-evenly; *@
+        align-items: center;
+        @* padding: 20px; *@
+        gap:30px;
+        margin: 100px 0 140px 0;
+    }
+    .header-title{
+        font-weight: 700;
+        width: 400px;
+    }
+    .header-text{
+        margin-top: 20px;
+        width: 500px;
+    }
+    .header-button{
+        background-color: yellow;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 2px;
+        font-size:15px;
+        text-transform: uppercase;
+    }
+    .rg-header>img{
+        width:350px;
+        height: 350px;
+    }
+    .active{
+        background-color: yellow;
+    }
+    .work-show-jobs{
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        margin-top: 30px;
+        padding: 0;
+    }
+    .work-show-jobs>li>a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-size: 14px;
+        font-weight: 700;
+        padding:5px 17px;
+    }
+    .work-show-title{
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .work-showcase-fr-image{
+width: 300px;
+height: 300px;
+    }
+    .work-showcase-sc-image{
+height:600px;
+width: 300px;
+
+    }
+    .card{
+        background-color: grey;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        padding-top: 10px;
+    }
+    .card-text{
+margin: 10px 0;
+    }
+    
+</style>
