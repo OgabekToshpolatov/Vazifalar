@@ -56,4 +56,4 @@ public class PostService : IPostService
         entity.IsEdited = true;
         return entity.ToModel();
     }
-}
+}   
