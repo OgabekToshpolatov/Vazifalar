@@ -1,0 +1,89 @@
+@model List<JobViewModel>
+
+<section>
+    <section class="work-showcase">
+        <h1 class="work-show-title" >
+            work showcase
+        </h1>
+<ul class="work-show-jobs">
+    <li>
+        <a href="./getjobs" >all</a>
+    </li>
+ <li>
+        <a href="./branding">branding</a>
+    </li>
+     <li>
+        <a href="./illustration">illustration</a>
+    </li>
+     <li>
+        <a href="./web" class="active">web</a>
+    </li>
+</ul>
+    <div class="btn">
+        <a href="Create">Create Job +</a>
+    </div>
+<div class="cards">
+
+@for(var i = 0;  i < Model.Count(); i++)
+{
+    var post = Model[i];
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+            <img class="card-img-top"  src=@post.Image alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">@post.Name</h4>
+                <p class="card-text">@post.Description</p>
+                <p class="card-text">@post.Company</p>
+                <p class="card-text">@post.PhoneNumber</p>
+                <p class="card-text">@post.CategoryId</p>
+                <p class="card-text">@post.CreatedDate.ToString("MM/dd/yyyy")</p>
+            </div>
+
+        </div>
+    </div>
+}
+
+<style>
+    .cards{
+        margin-top: 100px;
+        display: flex;
+gap: 25px;
+@* position: relative; *@
+    }
+    .btn{
+        @* position: absolute; *@
+    display: flex;
+    justify-content:flex-end;
+    }
+    .btn>a{
+        padding: 10px 20px;
+        background-color: blue;
+        color: #fff;
+        border:none;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+    .work-show-jobs{
+        margin-top:40px;
+        display: flex;
+padding: 0; 
+gap: 40px;      
+        list-style: none;
+    }
+    .work-show-jobs>li>a{
+        font-size: 19px;
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 5px 20px;
+        border-radius: 6px;
+        text-transform: capitalize;
+    }
+    .active{
+        background-color: yellow;
+    }
+    .work-show-title{
+        text-transform: uppercase;
+        margin-top: 40px;
+    }
+</style>

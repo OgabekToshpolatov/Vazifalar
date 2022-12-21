@@ -11,7 +11,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AppDbContext>(options => 
 {
-    options.UseSqlite(builder.Configuration.GetConnectionString("PostgresConnection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("PostgresConnection"));
 });
 
 builder.Services.AddIdentity<AppUser, IdentityRole>(options =>

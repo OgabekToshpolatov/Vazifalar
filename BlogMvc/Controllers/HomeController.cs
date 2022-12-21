@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using BlogMvc.Models;
+using BlogMvc.Services;
 using Microsoft.AspNetCore.Authorization;
 
 namespace BlogMvc.Controllers;
@@ -8,10 +9,12 @@ namespace BlogMvc.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IJobsService _jobService;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IJobsService jobService)
     {
         _logger = logger;
+        _jobService = jobService ;
     }
 
     public IActionResult Index()
@@ -30,4 +33,6 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+    
 }

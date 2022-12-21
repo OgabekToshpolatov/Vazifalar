@@ -52,7 +52,8 @@ public static class ModelEntityMapper
             Name = model.Name,
             Description = model.Description,
             CategoryId = model.CategoryId,
-            PostId = model.PostId,
+            Company = model.Company,
+            PhoneNumber = model.PhoneNumber,   
             Image = ToBase64String(model.Image)
         };
 
@@ -63,9 +64,12 @@ public static class ModelEntityMapper
             Name = entity.Name,
             Description = entity.Description,
             Image = entity.Image,
+            Company = entity.Company,
+            PhoneNumber = entity.PhoneNumber,
             CreatedDate = entity.CreatedDate,
             CategoryId = entity.CategoryId,
-            PostId = entity.PostId
+            
+            
         };
 
         

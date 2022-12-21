@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,14 +8,75 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/BlogMvc.styles.css" asp-append-version="true" />
+
+    <style>
+        .man-icon {
+            cursor: pointer;
+        }
+.nav-item{
+    @* border: 2px solid red; *@
+}
+        .nav-item:hover .nav-item-h {
+            display: flex;
+        }
+
+        .nav-item-profil>li {
+            padding: 0px 0;
+            border-bottom: 2px solid white;
+        }
+
+        .nav-item-profil>li>a {
+            color: white;
+        }
+
+        .nav-item-h {
+            right: 5px;
+            position: absolute;
+            display: flex;
+            padding: 0;
+            width: 130px;
+            text-align: center;
+            background-color: blue;
+            flex-direction: column;
+            display: none;
+
+        }
+
+        .nav-item-profil {
+            margin-top: 0 !important;
+            right: -5px;
+            position: absolute;
+            display: flex !important;
+            padding: 0;
+            width: 120px;
+            text-align: center;
+            background-color: blue;
+            flex-direction: column;
+
+        }
+
+        .nav-item-profil:checked .nav-item-profil {
+            display: none !important;
+        }
+
+        .nav-item-h>li {
+            padding: 5px 0;
+            border-bottom: 2px solid white;
+        }
+
+        .nav-item-h>li>a {
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 @* <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BlogMvc</a> *@
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" style="display: block;">
@@ -24,42 +86,79 @@
                         </li>
                         @* <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li> *@
-                        @* <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Post" asp-action="Create">Create Post</a>
-                        </li> *@
-                    </ul>
-                    <ul style="float: right; display: flex;">
-                        @if(!User.Identity.IsAuthenticated)
-                        {
-                            @* <li class="nav-item" style="list-style-type: none;">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
-                            </li>
-                            <li class="nav-item" style="list-style-type: none;">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
                             </li> *@
-                             <li class="nav-item" style="list-style-type: none;">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Work</a>
-                            </li>
-                             <li class="nav-item" style="list-style-type: none;">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">About</a>
-                            </li>
-                             <li class="nav-item" style="list-style-type: none;">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Blog</a>
-                            </li>
-                             <li class="nav-item" style="list-style-type: none;">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Contact</a>
-                            </li>
-                        }
-                        else
+                        @* <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Post" asp-action="Create">Create
+                            Post</a>
+                            </li> *@
+                    </ul>
+                    <ul style="align-items: center; float: right; display: flex;">
+                        @if (!User.Identity.IsAuthenticated)
                         {
 
                             <li class="nav-item" style="list-style-type: none;">
-                                <a class="nav-link text-dark">@User.Identity.Name</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Job" asp-action="GetJobs">Work</a>
                             </li>
                             <li class="nav-item" style="list-style-type: none;">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Post"
+                                asp-action="GetPosts">Company</a>
                             </li>
+                            <li class="nav-item" style="list-style-type: none;">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Contact"
+                                asp-action="SendMessage">Contact</a>
+                            </li>
+
+                            <li class="nav-item" style="list-style-type: none;">
+                                <a href="" class="nav-link text-dark">Account</a>
+
+                                <ul class="nav-item-h">
+                                    @* <li style="background-color:blue; list-style:none">Username</li> *@
+                                    <li style="list-style: none;"><a href="" style="text-decoration: none;">Sign Up</a></li>
+                                    <li style="list-style: none;"><a href="Account\Login"
+                                        style="text-decoration: none;">Sign In</a></li>
+                                </ul>
+                            </li>
+                            @* <li class="nav-item" style="list-style-type: none;">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account"
+                                asp-action="Register">Blog</a>
+                                </li>
+                                <li class="nav-item" style="list-style-type: none;">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account"
+                                asp-action="Register">Contact</a>
+                                </li> *@
+                        }
+                        else
+                        {
+                            <li class="nav-item" style="list-style-type: none;">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Job" asp-action="GetJobs">Work</a>
+                            </li>
+                            <li class="nav-item" style="list-style-type: none;">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Post"
+                                asp-action="GetPosts">About</a>
+                            </li>
+
+                            <li class="nav-item" style="list-style-type: none;">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Contact"
+                                asp-action="SendMessage">Contact</a>
+                            </li>
+
+                            <li class="nav-item" style="list-style-type: none; position:relative">
+                                <div class="man-icon">
+
+                                    <img style="width: 30px; height:30px; margin-left:15px;"
+                                    src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="">
+                                </div>
+                                <ul class="nav-item-h" style="" checked="true">
+                                    @* <li style="background-color:blue; list-style:none">Username</li> *@
+                                    <li style="list-style: none;"><a href="" style="text-decoration: none;">Profil</a></li>
+                                    <li style="list-style: none;"><a href="Account\Login"
+                                        style="text-decoration: none;">Chiqish</a></li>
+                                </ul>
+
+
+                            </li>
+
+
                         }
                     </ul>
                 </div>
@@ -82,4 +181,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

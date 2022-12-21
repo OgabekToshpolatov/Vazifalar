@@ -49,21 +49,35 @@ send message
 </ul>
 
 <div class="images">
-    <li class="nav-item" style="list-style-type: none;">
+    @* <li class="nav-item" style="list-style-type: none;">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Job" asp-action="GetJobs">Work</a>
-                            </li>
+                            </li> *@
 
 
-    <div class="card">
-    <img src="" class="work-showcase-fr-image" alt="">
-<p class="card-text">
-    Lorem ipsum dolor sit amet.
-</p>
+   <div class="cards">
+     <div class="card" >
+    <img src="https://thumbs.dreamstime.com/b/office-desk-workspace-bright-color-yellow-background-table-work-space-layout-computer-keyboard-plant-mouse-notepad-notes-222752012.jpg" class="work-showcase-fr-image" alt="">
+
+    <img src="https://thumbs.dreamstime.com/b/office-desk-workspace-bright-color-yellow-background-table-work-space-layout-computer-keyboard-plant-mouse-notepad-notes-222752012.jpg" class="work-showcase-sc-image" alt="">
+
     </div>
-    <img src="" class="work-showcase-sc-image" alt="">
-    <img src="" class="work-showcase-sc-image" alt="">
-    <img src="" class="work-showcase-fr-image" alt="">
-    <img src="" class="work-showcase-sc-image" alt="">
+    <div class="card">
+    <img src="https://thumbs.dreamstime.com/b/office-desk-workspace-bright-color-yellow-background-table-work-space-layout-computer-keyboard-plant-mouse-notepad-notes-222752012.jpg" class="work-showcase-sc-image" alt="">
+
+ <img src="https://thumbs.dreamstime.com/b/office-desk-workspace-bright-color-yellow-background-table-work-space-layout-computer-keyboard-plant-mouse-notepad-notes-222752012.jpg" class="work-showcase-fr-image" alt="">
+    
+
+    </div>
+    <div class="card">
+    
+    <img src="https://thumbs.dreamstime.com/b/office-desk-workspace-bright-color-yellow-background-table-work-space-layout-computer-keyboard-plant-mouse-notepad-notes-222752012.jpg" class="work-showcase-fr-image" alt="">
+
+<img src="https://thumbs.dreamstime.com/b/office-desk-workspace-bright-color-yellow-background-table-work-space-layout-computer-keyboard-plant-mouse-notepad-notes-222752012.jpg" class="work-showcase-sc-image" alt="">
+   
+
+    </div>
+   
+   </div>
 </div>
     </section>
 </section>
@@ -124,18 +138,29 @@ width: 300px;
 height: 300px;
     }
     .work-showcase-sc-image{
-height:600px;
+height:400px;
 width: 300px;
 
     }
     .card{
-        background-color: grey;
+        height: auto;
+        @* background-color: grey; *@
         width: 320px;
         display: flex;
         flex-direction: column;
+        justify-content:space-around;
         align-items: center;
         color: white;
-        padding-top: 10px;
+        padding: 10px;
+        border:none;
+        gap:20px;
+    }
+   
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: -10px;
+        align-items: center;
     }
     .card-text{
 margin: 10px 0;

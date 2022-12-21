@@ -47,3 +47,6 @@ button.accept-policy[b-608czf8kug] {
   white-space: nowrap;
   line-height: 60px;
 }
+.nav-item-hover[b-608czf8kug]{
+  position: absolute;
+}

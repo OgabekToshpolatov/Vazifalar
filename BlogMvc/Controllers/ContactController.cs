@@ -15,12 +15,17 @@ public class ContactController:Controller
         _context = context ;
     }
 
-    public async Task<IActionResult> SendMessage(SendMessageViewModel model)
+    public IActionResult SendMessage() => View();
+
+    [HttpPost]
+    public async  Task<IActionResult> SendMessage(SendMessageViewModel model)
     {
          if(!ModelState.IsValid)
                       return View();
          
          var Message = model.Adapt<Contact>();
+
+         
         return View();
     } 
 }

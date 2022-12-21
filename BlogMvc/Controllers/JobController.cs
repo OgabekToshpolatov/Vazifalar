@@ -30,11 +30,10 @@ public class JobController:Controller
         var post = await _jobService.GetJobByIdAsync(id);
         return View(post);
     }
-
+    
     public async Task<IActionResult> GetJobs()
     {
         var jobs = await _jobService.GetPostsAsync();
-        var bandingJobs = jobs.Where(p => p.CategoryId == 3).ToList();
         return View(jobs.ToList());
     }
 
@@ -42,6 +41,20 @@ public class JobController:Controller
     {
         var jobs = await _jobService.GetPostsAsync();
         var brandingJobs = jobs.Where(p => p.CategoryId == 3).ToList();
+        return View(brandingJobs);
+    }
+
+    public async Task<IActionResult> Web()
+    {
+        var jobs = await _jobService.GetPostsAsync();
+        var brandingJobs = jobs.Where(p => p.CategoryId == 2).ToList();
+        return View(brandingJobs);
+    }
+
+    public async Task<IActionResult> Illustration()
+    {
+        var jobs = await _jobService.GetPostsAsync();
+        var brandingJobs = jobs.Where(p => p.CategoryId == 1).ToList();
         return View(brandingJobs);
     }
 }

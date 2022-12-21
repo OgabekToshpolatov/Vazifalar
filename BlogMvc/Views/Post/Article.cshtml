@@ -1,8 +1,9 @@
 @model PostViewModel
 
-<div class="">
-    <img src="@Model.Image" alt="image">
-    <p>@Model.Name</p>
+<div class="Card">
+   
+   <div class="card-left">
+     <p>Name: @Model.Name</p>
     <p>@Model.Address</p>
     <p>@Model.PhoneNumber</p>
     <p>@Model.Description</p>
@@ -11,4 +12,28 @@
         <span>@Model.UpdatedDate</span>
     }
     <span>@Model.CreatedDate</span>
+   </div>
+   <div class="card-rigth">
+     <img src="@Model.Image" alt="image">
+   </div>
 </div>
+
+
+<style>
+    .Card{
+        margin-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @* border: 2px solid grey; *@
+    }
+    .card-rigth>img{
+        width: 310px;
+        height: 310px;
+        border-radius: 100%;
+    }
+    .card-left{
+        @* width: 300px; *@
+    }
+</style>

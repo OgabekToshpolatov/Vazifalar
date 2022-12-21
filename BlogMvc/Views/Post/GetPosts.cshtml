@@ -1,18 +1,51 @@
 @model List<PostViewModel>
 
+
+<div class="cards">
+
 @for(var i =0;  i < Model.Count(); i++)
 {
     var post = Model[i];
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 card">
         <div class="card">
             <img class="card-img-top" src=@post.Image alt="Card image cap">
             <div class="card-body">
                 <h4 class="card-title">@post.Name</h4>
                 <p class="card-text">@post.Description</p>
-                <p class="card-text">@post.Address</p>
-                <p class="card-text">@post.PhoneNumber</p>
-                <p class="card-text">@post.CreatedDate</p>
+                <div>
+                    <a href="./article/@post.Id" class="card-direct">
+                        Batafsil ma'lumot
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 }
+
+</div>
+
+<style>
+   .cards{
+        margin-top: 100px;
+        display: flex;
+gap: 30px;
+justify-content: space-between;
+flex-wrap: wrap;
+@* position: relative; *@
+    }
+    .card{
+        width: 320px;
+    }
+    .btn{
+        @* position: absolute; *@
+    display: flex;
+    justify-content:flex-end;
+    }
+    .card-img-top{
+        height: 350px;
+    }
+    .card-direct{
+        text-decoration: none;
+
+    }
+</style>
