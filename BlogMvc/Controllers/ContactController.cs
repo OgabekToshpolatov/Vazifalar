@@ -14,18 +14,20 @@ public class ContactController:Controller
     {
         _context = context ;
     }
+    
+    public  IActionResult Index() => View();
 
-    public IActionResult SendMessage() => View();
+    public  IActionResult SendMessage() => View();
 
     [HttpPost]
-    public async  Task<IActionResult> SendMessage(SendMessageViewModel model)
+    public async Task<IActionResult> SendMessage(SendMessageViewModel model)
     {
-         if(!ModelState.IsValid)
-                      return View();
+        if(!ModelState.IsValid) return View();
+        
+        var entity = model.Adapt<Contact>();
          
-         var Message = model.Adapt<Contact>();
-
-         
-        return View();
-    } 
+         await _context.Contacts.AddAsync(entity);
+         await  _context.SaveChangesAsync();
+        return LocalRedirect($"/contact/index");
+    }
 }

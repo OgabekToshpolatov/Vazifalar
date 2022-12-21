@@ -1,5 +1,6 @@
 using BlogMvc.Entities;
 using BlogMvc.Models;
+using BlogMvc.Models.Category;
 using BlogMvc.Models.Job;
 
 namespace BlogMvc.Mapper;
@@ -71,6 +72,20 @@ public static class ModelEntityMapper
             
             
         };
+
+        public static long ParseEnum(ECategory category)
+        {
+            if(category == ECategory.Branding)
+            return 1;
+
+            if(category == ECategory.Illustration)
+            return 2;
+
+            if(category == ECategory.Web)
+            return 3;
+
+            return 1;
+        }
 
         
 }

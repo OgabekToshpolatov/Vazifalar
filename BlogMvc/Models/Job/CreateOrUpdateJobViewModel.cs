@@ -1,3 +1,5 @@
+using BlogMvc.Models.Category;
+
 namespace BlogMvc.Models.Job;
 
 public class CreateOrUpdateJobViewModel
