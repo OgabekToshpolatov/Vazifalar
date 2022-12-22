@@ -19,6 +19,8 @@ public class ContactController:Controller
 
     public  IActionResult SendMessage() => View();
 
+    public  IActionResult ViewMessage() => View();
+
     [HttpPost]
     public async Task<IActionResult> SendMessage(SendMessageViewModel model)
     {
@@ -28,6 +30,6 @@ public class ContactController:Controller
          
          await _context.Contacts.AddAsync(entity);
          await  _context.SaveChangesAsync();
-        return LocalRedirect($"/contact/index");
+        return LocalRedirect($"/contact/viewmessage");
     }
 }
