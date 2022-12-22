@@ -4,6 +4,6 @@ namespace BlogMvc.Models.Category;
 
 public class CreateOrUpdateViewModelCategory
 {
-    [Required]
+    [Required(ErrorMessage ="Name is required")]
     public string Name { get; set; }
 }
