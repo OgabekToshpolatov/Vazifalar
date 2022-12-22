@@ -1,8 +1,10 @@
 @model List<PostViewModel>
 
 
+<div class="create-company">
+    <a href="./Create">Create Company +</a>
+</div>
 <div class="cards">
-
 @for(var i =0;  i < Model.Count(); i++)
 {
     var post = Model[i];
@@ -55,5 +57,20 @@ flex-wrap: wrap;
         width: 330px;
         
         
+    }
+    .create-company{
+      display: flex;
+      justify-content: flex-end;
+
+    }
+    .create-company>a{
+        background-color: blue;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        text-decoration: none;
+        color: white;
+        width: 150px;
+        border-radius: 10px;
     }
 </style>

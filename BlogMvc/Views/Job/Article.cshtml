@@ -1,32 +1,57 @@
 @model JobViewModel
 
+
+
+
 <div class="Card">
    
-<div class="card-left">
-        <p>@Model.Name</p>
-    <p>@Model.Description</p>
-    <p>@Model.Company</p>
-    <p>@Model.PhoneNumber</p>
-    <span>@Model.CreatedDate</span>
-</div>
-    <div class="card-right">
-         <img src="@Model.Image" alt="image">
-    </div>
+   <div class="card-top">
+  <h1 style="text-transform:capitalize">@Model.Name</h1>
+    <div class="card-left">
+     <p>@Model.Description</p>
+   </div>
+   <div class="card-rigth">
+     <img src="@Model.Image" alt="image">
+   </div>
+   </div>
+
+   <div class="card-bottom">
+    <p>Adress: @Model.Company</p>
+     <p>Phone number: @Model.PhoneNumber</p>
+   </div>
 </div>
 
 
 <style>
-      .Card{
+  h1{
+     position: absolute;
+  top: 100px;
+  left: 2;
+  }
+    .Card{
         margin-top: 100px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      flex-direction: column;
       flex-wrap: wrap;
-      @* border: 2px solid grey; *@
+    }
+    .card-top{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card-bottom{
+      margin-top: 30px;
+      display: flex;
+      align-items: flex-start;
+      gap: 200px;
+    }
+    .card-top> .card-left >p{
+      width: 700px;
+      line-height: 30px;
     }
     .card-rigth>img{
-        width: 310px;
-        height: 310px;
+        width: 280px;
+        height: 280px;
         border-radius: 100%;
     }
     .card-left{

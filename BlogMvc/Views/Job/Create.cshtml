@@ -4,7 +4,6 @@
 
 <form method="post" enctype="multipart/form-data">
   <div class="mb-3">
-    <label asp-for="@Model.Name" class="form-label">Name</label>
     <input type="text" asp-for="@Model.Name" class="form-control" placeholder="Name">
   </div>
   <div class="mb-3">
@@ -12,15 +11,12 @@
     <textarea asp-for="@Model.Description" class="form-control"></textarea>
   </div>
   <div class="mb-3">
-    <label asp-for="@Model.CategoryId" class="form-label">CategoryId</label>
     <input type="text" asp-for="@Model.CategoryId" class="form-control" placeholder="CategoryId">
   </div>
   <div class="mb-3">
-    <label asp-for="@Model.Company" class="form-label">Company</label>
     <input type="text" asp-for="@Model.Company" class="form-control" placeholder="Company">
   </div>
   <div class="mb-3">
-    <label asp-for="@Model.PhoneNumber" class="form-label">PhoneNumber</label>
     <input type="text" asp-for="@Model.PhoneNumber" class="form-control" placeholder="PhoneNumber">
   </div>
   <div class="mb-3">

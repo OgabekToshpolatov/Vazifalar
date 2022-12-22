@@ -19,24 +19,20 @@
         <a href="./web" class="active">web</a>
     </li>
 </ul>
-    <div class="btn">
-        <a href="Create">Create Job +</a>
-    </div>
 <div class="cards">
-
 @for(var i = 0;  i < Model.Count(); i++)
 {
     var post = Model[i];
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+    <div class=" mb-4">
         <div class="card">
             <img class="card-img-top"  src=@post.Image alt="Card image cap">
             <div class="card-body">
                 <h4 class="card-title">@post.Name</h4>
-                <p class="card-text">@post.Description</p>
-                <p class="card-text">@post.Company</p>
-                <p class="card-text">@post.PhoneNumber</p>
-                <p class="card-text">@post.CategoryId</p>
-                <p class="card-text">@post.CreatedDate.ToString("MM/dd/yyyy")</p>
+                  <div>
+                    <a href="./article/@post.Id" class="card-direct">
+                        Batafsil ma'lumot
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -48,6 +44,8 @@
         margin-top: 100px;
         display: flex;
 gap: 25px;
+flex-wrap: wrap;
+justify-content: space-evenly;
 @* position: relative; *@
     }
     .btn{
@@ -85,5 +83,12 @@ gap: 40px;
     .work-show-title{
         text-transform: uppercase;
         margin-top: 40px;
+    }
+    .card-direct{
+        text-decoration: none;
+    }
+    .card-img-top{
+        width: 280px;
+        height: 280px;
     }
 </style>

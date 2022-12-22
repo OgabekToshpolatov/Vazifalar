@@ -36,6 +36,7 @@ public class PostController : Controller
         return LocalRedirect($"/post/article/{post.Id}");
     }
 
+   [AllowAnonymous]
     public async Task<IActionResult> Article([FromRoute]long id)
     {
         var post = await _service.GetPostAsync(id);
